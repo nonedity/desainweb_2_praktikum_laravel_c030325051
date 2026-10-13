@@ -32,7 +32,7 @@ Route::prefix('akademik')->group(function () {
     // HALAMAN MAHASISWA
     Route::resource('mahasiswa', MahasiswaController::class);
     // HALAMAN MATA KULIAH
-    Route::resource('matakuliah', MataKuliahController::class);
+    Route::resource('matakuliah', MataKuliahController::class)->only(['index', 'show', 'create', 'store']);
 });
 
 // HALAMAN GROUP ADMIN
