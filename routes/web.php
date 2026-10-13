@@ -30,12 +30,9 @@ Route::get('/profil', function () {
 // ROUTE PREFIX AKADEMIK
 Route::prefix('akademik')->group(function () {
     // HALAMAN MAHASISWA
-    Route::get('/mahasiswa', [MahasiswaController::class, 'index'])->name('mahasiswa.index');
-    Route::get('/mahasiswa/{nim}', [MahasiswaController::class, 'show'])->name('mahasiswa.show');
-
+    Route::resource('mahasiswa', MahasiswaController::class);
     // HALAMAN MATA KULIAH
-    Route::get('/matakuliah', [MataKuliahController::class, 'index'])->name('matakuliah.index');
-    Route::get('/matakuliah/{kode}', [MataKuliahController::class, 'show'])->name('matakuliah.show');
+    Route::resource('matakuliah', MataKuliahController::class);
 });
 
 // HALAMAN GROUP ADMIN
