@@ -21,7 +21,7 @@ class MahasiswaController extends Controller
     }
     public function show(Mahasiswa $mahasiswa)
     {
-        return "menampilkan detail mahasiswa dengan nim (model binding) {$mahasiswa->nama}";
+        return "menampilkan detail mahasiswa dengan nim (model binding) {$mahasiswa->nim}";
     }
     public function edit($nim)
     {

@@ -21,6 +21,6 @@ class MataKuliahController extends Controller
     }
     public function show(MataKuliah $mataKuliah)
     {
-        return "tampilkan daftar kuliah dengan kode (model binding): {$mataKuliah->kode}";
+        return "tampilkan daftar kuliah dengan kode (model binding): {$mataKuliah->kode_mk}";
     }
 }
