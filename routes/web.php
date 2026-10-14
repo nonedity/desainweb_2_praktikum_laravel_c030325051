@@ -44,3 +44,8 @@ Route::prefix('admin')->group(function () {
         return 'Halaman Laporan Admin';
     });
 });
+
+// HALAMAN SAPA
+Route::get('/sapa', function () {
+    return 'Ini adalah route halaman Sapa';
+});
