@@ -55,5 +55,5 @@ Route::prefix('admin')->group(function () {
 
 // HALAMAN SAPA
 Route::get('/sapa', function () {
-    return 'Ini adalah route halaman Sapa';
+    return view('sapa');
 });

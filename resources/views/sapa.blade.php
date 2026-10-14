@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Halaman Sapa</title>
+    <title>Praktikum Blade</title>
 </head>
 <body>
-    <h2>Halo dari laravel 13.</h2>
+    <h1>Uji Sintaks Blade</h1>
+    <p>Escape: {{ '<b>Teks tebal dengan kurung kurawal ganda</b>' }}</p>
+    <p>Raw: {!! '<b>Teks tebal dengan kurung kurawal seru</b>' !!}</p>
 </body>
 </html>
