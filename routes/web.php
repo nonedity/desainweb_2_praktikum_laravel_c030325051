@@ -24,7 +24,15 @@ Route::get('/kontak', function () {
 
 // HALAMAN PROFIL
 Route::get('/profil', function () {
-    return 'Ini adalah route halaman Profil';
+    return view('profil')
+        ->with('mahasiswa', 'Sunta Aditya Pangestu')
+        ->with('nim', 'C030325051')
+        ->with('prodi', 'Teknik Informatika');
+});
+
+// ROUTE AKADEMIK/STATISTIK
+Route::get('/akademik/statistik', function () {
+    return view('akademik.statistik');
 });
 
 // ROUTE PREFIX AKADEMIK
